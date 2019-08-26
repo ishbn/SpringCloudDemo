@@ -1,0 +1,17 @@
+server:
+  port: 8207
+spring:
+  application:
+    name: feign
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8200/eureka/
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
+
+
+
