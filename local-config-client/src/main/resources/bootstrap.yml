@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: nativeclient
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8209
+      fail-fast: true

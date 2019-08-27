@@ -13,6 +13,8 @@
         <module>ribbon</module>
         <module>Feign</module>
         <module>hystrix</module>
+        <module>local-config-server</module>
+        <module>local-config-client</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
