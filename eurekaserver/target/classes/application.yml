@@ -6,8 +6,11 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8200/euraka
+      defaultZone: http://localhost:8200/eureka/
     fetch-registry: false
     register-with-eureka: false
+    healthcheck:
+      enabled: true
+
 
 

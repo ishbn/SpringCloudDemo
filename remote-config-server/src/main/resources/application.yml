@@ -1,0 +1,24 @@
+server:
+  port: 8212
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ishbn/SpringCloudDemo.git
+          username: root
+          password: 123456
+          search-paths: config
+      label: master
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8200/eureka/
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true
+

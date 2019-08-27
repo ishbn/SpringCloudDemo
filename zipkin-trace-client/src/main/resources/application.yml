@@ -1,0 +1,22 @@
+server:
+  port: 8215
+spring:
+  application:
+    name: zipkinclient
+  sleuth:
+    web:
+      client:
+        enabled: true
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://localhost:8214/
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8200/eureka/
+  instance:
+    prefer-ip-address: true
+
+
